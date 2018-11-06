@@ -14,16 +14,17 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: helloweb
+  name: urbanbattlegroundweb
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: helloweb-ip
+    kubernetes.io/ingress.global-static-ip-name: urbanbattleground-ip
   labels:
     app: hello
 spec:
   tls:
-  - secretName: www-dogs-com-tls
+  - secretName: www-gke-k8s-urbanbattleground-tls
     hosts:
-    - www.dogs.com
+    - prd.k8s-services.urbanbattleground.com
+    - stg.k8s-services.urbanbattleground.com
   backend:
-    serviceName: helloweb-backend
+    serviceName: urbanbattlegroundweb-backend
     servicePort: 8080
