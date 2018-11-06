@@ -14,12 +14,12 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: helloweb
+  name: urbanbattlegroundweb
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: helloweb-ip
+    kubernetes.io/ingress.global-static-ip-name: urbanbattleground-ip
   labels:
     app: hello
 spec:
   backend:
-    serviceName: helloweb-backend
+    serviceName: urbanbattlegroundweb-backend
     servicePort: 8080
