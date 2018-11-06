@@ -29,7 +29,7 @@ from Let's Encrypt, and is required by their Terms of Service):
 Then run this to deploy the Issuer manifests (the command below will populate
 your email address [in the manifest file][manifest]):
 
-    curl -sSL https://rawgit.com/ahmetb/gke-letsencrypt/master/yaml/letsencrypt-issuer.yaml | \
+    curl -sSL https://rawgit.com/kajjjak/gke-letsencrypt/master/yaml/letsencrypt-issuer.yaml | \
         sed -e "s/email: ''/email: $EMAIL/g" | \
         kubectl apply -f-
 
