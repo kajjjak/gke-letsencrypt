@@ -21,7 +21,7 @@ A brief copy of the [GKE static IP tutorial][tut] is below.
 First, deploy the [sample web application manifest](yaml/sample-app.yaml) which
 contains the Deployment and a NodePort Service (required by Ingress):
 
-    kubectl apply -f https://raw.githubusercontent.com/ahmetb/gke-letsencrypt/master/yaml/sample-app.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kajjjak/gke-letsencrypt/master/yaml/sample-app.yaml
 
 Create a static IP called to (will be used in the Ingress):
 
@@ -29,7 +29,7 @@ Create a static IP called to (will be used in the Ingress):
 
 Then, deploy the Ingress using [this manifest](yaml/sample-ingress.yaml):
 
-    kubectl apply -f https://raw.githubusercontent.com/ahmetb/gke-letsencrypt/master/yaml/sample-ingress.yaml
+    kubectl apply -f https://raw.githubusercontent.com/kajjjak/gke-letsencrypt/master/yaml/sample-ingress.yaml
 
 Run `kubectl get ingress` until you see the static IP address assigned to the
 load balancer.
