@@ -25,7 +25,7 @@ If you've used [the sample ingress](yaml/sample-ingress.yaml) earlier, save the
 [updated Ingress manifest](yaml/sample-ingress-tls.yaml) to your computer, and name it
 `ingress-tls.yaml`.
 
-    curl -O https://raw.githubusercontent.com/ahmetb/gke-letsencrypt/master/yaml/sample-ingress-tls.yaml
+    curl -O https://raw.githubusercontent.com/kajjjak/gke-letsencrypt/master/yaml/sample-ingress-tls.yaml
 
 Change the `secretName` and the `hosts` fields with the values you used earlier:
 
@@ -72,6 +72,3 @@ GitHub.
 ----
 
 **Next:** [Cleanup &rarr;](99-cleanup.md)
-
-
-![Google Analytics](https://ga-beacon.appspot.com/UA-2609286-16/60-start-serving-https?pixel)
