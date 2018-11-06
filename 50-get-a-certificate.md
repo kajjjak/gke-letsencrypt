@@ -19,7 +19,7 @@ limitations under the License.
 Save [certificate.yaml](yaml/certificate.yaml) manifest, which will request
 a certificate for a domain name from the `letsencrypt-prod` issuer:
 
-    curl -O https://raw.githubusercontent.com/ahmetb/gke-letsencrypt/master/yaml/certificate.yaml
+    curl -O https://raw.githubusercontent.com/kajjjak/gke-letsencrypt/master/yaml/certificate.yaml
 
 ```yaml
 apiVersion: certmanager.k8s.io/v1alpha1
@@ -100,6 +100,3 @@ If you see the "CeritificateIssued" event, it means it has worked!
 
 **Next:** [Start serving HTTPS traffic &rarr;](60-start-serving-https.md)
 
-
-
-![Google Analytics](https://ga-beacon.appspot.com/UA-2609286-16/50-get-a-certificate?pixel)
