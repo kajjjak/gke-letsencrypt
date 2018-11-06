@@ -14,19 +14,21 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: dogs-com-tls
+  name: gke-k8s-urbanbattleground-tls
   namespace: default
 spec:
-  secretName: dogs-com-tls
+  secretName: gke-k8s-urbanbattleground-tls
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: www.dogs.com
+  commonName: prd.k8s-services.urbanbattleground.com
   dnsNames:
-  - www.dogs.com
+  - prd.k8s-services.urbanbattleground.com 
+  - stg.k8s-services.urbanbattleground.com 
   acme:
     config:
     - http01:
-        ingress: helloweb
+        ingress: urbanbattlegroundweb
       domains:
-      - www.dogs.com
+      - prd.k8s-services.urbanbattleground.com 
+      - stg.k8s-services.urbanbattleground.com 
