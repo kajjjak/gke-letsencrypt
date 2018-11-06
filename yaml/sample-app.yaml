@@ -14,7 +14,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: helloweb
+  name: urbanbattlegroundweb
   labels:
     app: hello
 spec:
@@ -33,7 +33,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloweb-backend
+  name: urbanbattlegroundweb-backend
   labels:
     app: hello
 spec:
