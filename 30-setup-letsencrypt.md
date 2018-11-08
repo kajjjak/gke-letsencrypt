@@ -33,6 +33,10 @@ your email address [in the manifest file][manifest]):
         sed -e "s/email: ''/email: $EMAIL/g" | \
         kubectl apply -f-
 
+Or
+
+    kubectl apply -f letsencrypt-issuer.yaml
+
 You will see output:
 
     clusterissuer "letsencrypt-staging" created
